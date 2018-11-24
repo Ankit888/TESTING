@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<script>
+$( document ).ready(function() {
+var names = ['ankit','atul','anand','shubham','goldi','shivam'];
+var b = 0;
+var i =0;
+document.getElementById("myBtn").addEventListener("click", myFun);
+
+ function myFun(){
+
+
+b = names[i];
+document.getElementById("hello").innerHTML =b ;
+i=i+1;
+
+if(names.length ==i){
+i = 0;
+
+}
+
+
+}
+
+
+});
+</script>
+
+
+<h1></h1>
+<center><p id = "hello">CHANGE</p></center>
+
+<button  id="myBtn" >Random Quote</button>
+</body>
+</html>
